@@ -1,7 +1,7 @@
 <div>
     {{-- Nothing in the world is as soft and yielding as water.    {{Auth::user()->profile_photo_url}}  --}}
   <div class="col-md-12">
-    <textarea wire:model="message" name="name" class="form-control" rows="4" cols="80"></textarea>
+    <textarea wire:model="message" name="name" id="message" data-emojiable="true" class="form-control" rows="4" cols="80"></textarea>
     @error ('message')
       <small class="text-danger">{{ $message }}</small>
     @enderror
@@ -21,4 +21,16 @@
        setTimeout(function(){$("#send-view").fadeOut('slow');}, 3000);
      });
    </script>
+
+  <!-- <script>
+   tinymce.init({
+    selector: "#message",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "bottom",
+    menubar: false
+    });
+  </script>-->
+
+
 </div>
