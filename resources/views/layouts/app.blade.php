@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="{!! asset({{ mix('css/app.css') }}) !!}">
 
         @livewireStyles
 
@@ -21,7 +21,7 @@
         @livewireScripts
         @stack('scripts')
         <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{!! asset({{ mix('js/app.js') }}) !!}" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 
 
