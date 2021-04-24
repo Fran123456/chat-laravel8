@@ -11,13 +11,13 @@ class ChatList extends Component
     protected $listeners = ['recived']; //de sistema
 
     public function mount(){//de sistema
-       $this->messages = Message::orderby('created_at','DESC')->take(10)->get()->reverse();
+       $this->messages = Message::orderby('created_at','DESC')->take(7)->get()->reverse();
        //$this->messages = collect($this->messages);
       // $this->messages = $this->messages->reverse();
     }
 
     public function recived($message){
-      $this->messages = Message::orderby('created_at','DESC')->take(10)->get()->reverse();
+      $this->messages = Message::orderby('created_at','DESC')->take(7)->get()->reverse();
       //$this->messages = collect($this->messages);
       //$this->messages = $this->messages->reverse();
     }

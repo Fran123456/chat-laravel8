@@ -19,6 +19,8 @@ class ChatForm extends Component
         return view('livewire.chat-form');
     }
 
+
+
 /*    public function updated($field){//de sistema
       $this->validateOnly($field, [
         'message'=>'required|min:3'

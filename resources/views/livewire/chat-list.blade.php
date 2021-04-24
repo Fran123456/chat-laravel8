@@ -5,9 +5,47 @@
 }
 </style>
 
+  <div class="card">
+    <div class="card-header">Chat</div>
+    <div class="card-body height3">
+      <ul class="chat-list">
+        @foreach ($messages as $key => $value)
+        @if (Auth::user()->id == $value->user_id)
+        <li class="in">
+          <div class="chat-img">
+            <img alt="Avtar" src="{{$value->user->profile_photo_url}}">
+          </div>
+          <div class="chat-body">
+            <div class="chat-message">
+              <h5>{{$value->user->name}}</h5>
+              <p>{{ $value->message }}</p>
+            </div>
+          </div>
+        </li>
+        @else
+        <li class="out">
+          <div class="chat-img">
+            <img alt="Avtar" src="{{$value->user->profile_photo_url}}">
+          </div>
+          <div class="chat-body">
+            <div class="chat-message">
+              <h5>{{$value->user->name}}</h5>
+              <p>{{ $value->message }}</p>
+            </div>
+          </div>
+        </li>
+        @endif
+        @endforeach
 
+      </ul>
+    </div>
+  </div>
+
+
+
+<!--
     {{-- Nothing in the world is as soft and yielding as water.    {{Auth::user()->profile_photo_url}}  --}}
-  <div class="col-md-12">
+  <div class="col-md-12 " style=" overflow: scroll;">
     <br>
     <ul class="list-unstyled">
       @foreach ($messages as $key => $value)
@@ -45,7 +83,7 @@
       @endforeach
     </ul>
   </div>
-
+-->
 
     <script>
 
