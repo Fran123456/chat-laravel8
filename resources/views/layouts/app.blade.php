@@ -16,7 +16,7 @@
         @livewireStyles
 
 
-        <script src="vendor/livewire/livewire.js"></script>
+        <script src="{!! asset('vendor/livewire/livewire.js') !!}"></script>
         @stack('modals')
         @livewireScripts
         @stack('scripts')
@@ -33,7 +33,7 @@
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
     </head>
