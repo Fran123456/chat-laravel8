@@ -20,17 +20,7 @@
                   @livewire('chat-form')
                 </div>
                 <div class="col-md-6">
-                  	    <div id="custom-search-input">
-                              <div class="input-group">
-                                  <input type="text" class="search-query form-control" placeholder="Search" />
-                                  <span class="input-group-btn">
-                                      <button type="button" disabled>
-                                          <span class="fa fa-search"></span>
-                                      </button>
-                                  </span>
-                              </div>
-                          </div>
-
+                  @livewire('search')
                 </div>
 
             </div>

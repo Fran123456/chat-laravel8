@@ -20,6 +20,7 @@ return array(
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Livewire\\ChatForm' => $baseDir . '/app/Http/Livewire/ChatForm.php',
     'App\\Http\\Livewire\\ChatList' => $baseDir . '/app/Http/Livewire/ChatList.php',
+    'App\\Http\\Livewire\\Search' => $baseDir . '/app/Http/Livewire/Search.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',

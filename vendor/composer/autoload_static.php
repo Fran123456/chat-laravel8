@@ -597,6 +597,7 @@ class ComposerStaticInit2e2c4074577ad0d6e6e56607ea7264d7
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Livewire\\ChatForm' => __DIR__ . '/../..' . '/app/Http/Livewire/ChatForm.php',
         'App\\Http\\Livewire\\ChatList' => __DIR__ . '/../..' . '/app/Http/Livewire/ChatList.php',
+        'App\\Http\\Livewire\\Search' => __DIR__ . '/../..' . '/app/Http/Livewire/Search.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
