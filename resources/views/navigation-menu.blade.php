@@ -17,7 +17,7 @@
             </ul>
 
             <ul class="navbar-nav ">
-                <x-jet-nav-link href="{{ route('requests') }}" :active="request()->routeIs('requests')">
+                <x-jet-nav-link href="{{ route('friend-requests') }}" :active="request()->routeIs('friend-requests')">
                     {{ __('Solicitudes') }}
                 </x-jet-nav-link>
             </ul>
