@@ -49,7 +49,7 @@
         </header>-->
 
         <!-- Page Content -->
-        <main class="container-fluid my-3">
+        <main class="container-fluid my-2">
             {{ $slot }}
         </main>
 

@@ -22,3 +22,5 @@ Route::get('/', function () {
 })->name('dashboard');*/
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Controllers\Chat\ChatController@chat')->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/requests', 'App\Http\Controllers\FriendRequest/FriendRequest@requestView')->name('requests');
